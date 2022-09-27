@@ -1,0 +1,56 @@
+/* || General Styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-pale-blue: hsl(225, 100%, 94%);
+    --clr-bright-blue: hsl(245, 75%, 52%);
+    --clr-very-pale-blue: hsl(225, 100%, 98%);
+    --clr-desaturated-blue: hsl(224, 23%, 55%);
+    --clr-dark-blue: hsl(223, 47%, 23%);
+    --clr-white: white;
+    --fs-primary: 16px;
+    --ff-primary: 'Red Hat Display', sans-serif;
+}
+
+body {
+    font-size: var(--fs-primary);
+    font-family: var(--ff-primary);
+    background-color: var(--clr-pale-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    margin: 2rem;
+    background-color: var(--clr-white);
+    width: 85%;
+    display: grid;
+    grid-template-rows: 1fr 2.5fr;
+    border-radius: 1rem;
+}
+
+
+.hero img {
+    max-width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.order__plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
