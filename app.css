@@ -38,8 +38,12 @@ main {
     display: grid;
     grid-template-rows: 1fr 2.5fr;
     border-radius: 1rem;
-    max-width: 420px;
+    max-width: 450px;
     min-width: 320px;
+}
+
+footer {
+    font-size: 0.8rem;
 }
 
 /* || Hero */
@@ -142,5 +146,39 @@ main {
 
 /* || Desktop Styles */
 @media screen and (min-width: 500px) {
+    footer {
+        font-size: 1rem;
+    }
     
+    .order {
+        padding: 1.5rem;
+    }
+
+    .order h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .order > p {
+        font-size: 1.25rem;
+    }
+
+    .order__plan {
+        padding: 2rem;
+    }
+
+    .order__plan h2 {
+        font-size: 1.25rem;
+    }
+
+    .order__plan a {
+        font-size: 1.1rem;
+    }
+
+    .order__options button {
+        font-size: 1.1em;
+    }
+    .order__options p > a {
+        font-size: 1.1em;
+    }
 }
